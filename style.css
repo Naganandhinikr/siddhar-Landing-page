@@ -1,0 +1,342 @@
+
+
+.navbar-first {
+    background: linear-gradient(#FF6F00, #f5ae45);
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.navbar-second {
+    background: linear-gradient(#c8433b, #ff9e0c);
+    color: #FFFFFF;
+    padding: 10px;
+}
+
+.navbar-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #FFC107; 
+}
+
+.navbar-brand img {
+    height: 60px; 
+    margin-left: 20px;
+}
+
+.nav-item{
+    margin:0 10px;
+}
+
+.nav-link i{
+    color: black;
+}
+
+.navbar .mx-auto {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-shadow {
+    text-shadow: 3px 3px 5px #fa1c11; /* Shadow effect */
+}
+
+.nav-link {
+    color: #FFC107; 
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #FFF; 
+}
+
+.hero img{
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+    /* height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_siddhar{
+    background: linear-gradient(#fc8124, #fdd210);
+    /* height: 250vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    padding-bottom: 10px;
+}
+
+.about_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.about_content{
+    background-image: url(/images/Om-img.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.arivu_heading{
+    margin: 10px 0; 
+}
+
+.arivu{
+    margin: 5px 0;
+}
+
+#templeCarousel {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-item {
+    height: 100vh; /* Full viewport height, adjust as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel-overlay {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.carousel-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #FFC107;
+}
+
+.carousel-description {
+    line-height: 1.6;
+}
+
+
+.footer {
+    /* background-image: url(/images/image\ 5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; */
+    background: linear-gradient(to bottom, #a50f15, #ff7f00); 
+    /* background-blend-mode: overlay; */
+    padding: 20px 0;
+    color: white;
+}
+
+.footer_content {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    text-align: center;
+}
+
+.footer_logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    align-self: self-start;
+    margin: 0 20px;
+}
+
+.footer_logo img {
+    max-width: 80px;
+    margin: 10px;
+}
+
+.footer_title {
+    /* font-size: 18px; */
+    font-weight: bold;
+    margin: 0;
+}
+
+.footer_columns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer_column {
+    /* flex: 1; */
+    padding: 0 10px;
+}
+
+.footer_heading {
+    /* font-size: 16px; */
+    font-weight: bold;
+    color: #ffdd00;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: start;
+}
+
+.footer_links {
+    list-style: none;
+    padding: 0;
+}
+
+.links{
+    list-style: none;
+}
+
+.footer_links li {
+    margin-bottom: 5px;
+    display: flex;
+    align-items: start;
+    color: black;
+    font-weight: bold;
+}
+
+.d-flex{
+    flex-direction: row;
+}
+
+/* Custom styles for small screens */
+@media (max-width: 576px) {
+    .navbar-brand img {
+        height: 60px; /* Adjust logo size */
+    }
+    
+    .navbar-heading h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .about_img img {
+        width: 100%; /* Full-width image */
+    }
+
+    .about_content {
+        text-align: center; /* Center-align text */
+    }
+
+    .carousel-overlay{
+        top: 50%;
+    }
+
+    .footer_content {
+        flex-direction: column; /* Stack footer columns */
+    }
+
+    .footer_columns {
+        flex-direction: column; /* Stack footer columns */
+        text-align: center;
+    }
+
+    .footer_logo {
+        flex-direction: column; /* Stack logo and title */
+        align-items: center;
+    }
+
+    .footer_title {
+        margin: 0; /* Remove margin */
+        text-align: center;
+    }
+}
+
+/* Medium screens */
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar-heading h2 {
+        font-size: 1.75rem; /* Adjust heading size */
+    }
+
+    .about_img img {
+        width: 80%; /* Adjust image width */
+    }
+
+    .carousel-overlay{
+        top: 50%;
+    }
+    
+    .footer_columns {
+        flex-direction: column;
+    }
+
+    .footer_column {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Large screens */
+@media (min-width: 769px) and (max-width: 992px) {
+    .navbar-heading h2 {
+        font-size: 2rem; /* Adjust heading size */
+    }
+
+    .about_img img {
+        width: 75%; /* Adjust image width */
+    }
+
+    .footer_content {
+        flex-direction: row; /* Keep footer columns in a row */
+    }
+
+    .footer_columns {
+        flex-direction: row; /* Keep footer columns in a row */
+        text-align: left;
+    }
+
+    .footer_logo {
+        flex-direction: row;
+    }
+
+    .footer_title {
+        margin-left: 10px;
+        text-align: left;
+    }
+}
+
+/* Extra-large screens */
+@media (min-width: 993px) {
+    .navbar-heading h2 {
+        font-size: 2.25rem; /* Adjust heading size */
+    }
+
+    .about_img img {
+        width: 70%; /* Adjust image width */
+    }
+
+    .footer_content {
+        flex-direction: column; /* Keep footer columns in a row */
+    }
+
+    .footer_columns {
+        flex-direction: row;
+        justify-content: space-between; /* Distribute space evenly */
+    }
+
+    .footer_logo {
+        flex-direction: row;
+    }
+
+    .footer_title {
+        margin-left: 15px;
+        text-align: left;
+    }
+}
